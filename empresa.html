@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8" />
+<title>IR Contabilidade</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0"/>
+<meta name="author" content="Emanuel Fernandes"/>
+<meta name="description" content="A IR Contabilidade é uma empresa experiente no mercado, conhecendo a fundo as necessidades do mercado, e assim atendendo as necessidades dos nossos clientes."/>
+<meta name="keywords" content="Assessoria, Consultoria, Administração, DEPARTAMENTO CONTÁBIL, DEPARTAMENTO PESSOAL, DEPARTAMENTO FISCAL, ABERTURA E ENCERRAMENTO, ADMINISTRAÇÃO DE CONDOMÍNIOS, ESCRITURAÇÃO FISCAL, ASSESSORIA DE CONDOMÍNIOS, CONTÁBEIS"/>
+<meta name="language" content="portuguese, PT-BR"/>
+<link href="css/base.css" rel="stylesheet" type="text/css"/>
+<link href="css/Calendario.css" rel="stylesheet" type="text/css"  media="all"/>
+<link href="css/jquery.bxslider.css" rel="stylesheet"/>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/global.js"  type="text/javascript"></script>
+<script src="js/funcoes.js" type="text/javascript"></script>
+<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+ //CONTATO FORM
+ function validateContato(){
+  var x=document.forms["contato"]["campos[Nome]"].value;
+  if (x==null || x==""){
+    alert("Por Favor, coloque seu nome.");
+    return false;
+  }
+
+  var x=document.forms["contato"]["campos[Email]"].value;
+  var atpos=x.indexOf("@");
+  var dotpos=x.lastIndexOf(".");
+
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+    alert("Por Favor, insira um email válido.");
+    return false;
+  }
+
+  var x=document.forms["contato"]["campos[Cidade/Estado]"].value;
+  if (x==null || x==""){
+    alert("Por Favor, coloque sua Cidade e Estado.");
+    return false;
+  }
+
+  var x=document.forms["contato"]["campos[Telefone]"].value;
+  if (x==null || x==""){
+    alert("Por Favor, coloque seu telefone.");
+    return false;
+  }
+
+  else{return true;}
+}
+</script>
+<!--Inicio SCRIPT Chat-->
+<script type="text/javascript">
+window.$mysuite||function(t,e){var c=$mysuite=function(t){c._.push(t)},s=c.s=t.createElement(e),a=t.getElementsByTagName(e)[0];c.set=function(t){c.set._.push(t)},c._=[],c.set._=[],s.async=!0,s.setAttribute("charset","utf-8"),s.src="http://www.google.com.br",c.t=+new Date,s.type="text/javascript",a.parentNode.insertBefore(s,a)}(document,"script");
+</script>
+<!--Fim SCRIPT Chat-->
+
+</head>
+<body>
+  <!-- POP UP IE-->
+  <div id="boxes">
+    <!-- Janela Modal -->
+    <div id="dialog2" class="window">
+      <div align="right">
+        <input type="button" value="X" class="close"/>
+      </div>
+      <a href="http://www.microsoft.com/pt-br/download/internet-explorer-9-details.aspx"><img src="images/mensagem.jpg" border="0"/></a>
+    </div>
+    <!-- Fim Janela Modal-->
+    <!-- Máscara para cobrir a tela -->
+    <div id="mask"></div>
+  </div>
+  <!-- FIM POP UP IE -->
+  <header>
+    <div class="row">
+      <div class="container">
+        <div class="col-md-4 col-sm-4 logo">
+          <a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+        </div>
+        <div class="col-md-8 padding-menu">
+          <section class="menu">
+            <a id="menu-toggle" class="button dark" href="javascript:void(0);">&nbsp;</a>
+            <nav id="navigation">
+              <ul id="main-menu">
+                <li class="no-separador no-padding-left"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="empresa.html" title="Empresa">Empresa</a></li>
+                <li><a href="servicos.html" title="Serviços">Servicos</a></li>
+                <li><a href="links.html" title="Links Úteis">Links Uteis</a></li>
+                <li><a href="contato.html" title="Contato">Contato</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="clear"></div>
+<section class="title">
+    <div class="container">
+        <h1>Empresa</h1>
+    </div>
+</section>
+<section class="margin-bottom">
+    <div class="container">
+        <div class="col-md-5 padding-top">
+            <figure> <img src="images/img-empresa.png" class="img-responsive"></figure><br><br>
+            <p>Através da experiência adquirida ao longo de anos de atuação, a <strong>IR Contabilidade</strong> conhece a fundo as necessidades do mercado e assim executa serviços diferenciados de contabilidade. Sua estrutura conta com uma equipe de colaboradores altamente qualificados, que passam por aperfeiçoamento constante nas áreas tributária, contábil, fiscal e trabalhista.</p>
+        </div>
+        <div class="col-md-6 col-md-offset-1 padding-top">
+            <article>
+                <h2>Missão</h2><br>
+                <p>Oferecer soluções contábeis com qualidade, agilidade e confiabilidade, para satisfazer as necessidades e expectativas dos nossos clientes, fornecedores, acionistas, colaboradores, governos e sociedade em geral. </p>
+            </article>
+            <article>
+                <h2>Visão</h2>
+                <p>Busca incessante por soluções rápidas e seguras com foco nas necessidades e expectativas dos clientes. Nosso sucesso é consequência da satisfação e confiança de todos aqueles para os quais prestamos os nossos serviços, razão pela qual nos consolidamos no disputado mercado do Rio Grande do Norte.</p>
+            </article>
+            <article>
+                <h2>Valores</h2>
+                - Profissionalismo;<br>
+                - Respeito;<br>
+                - Visão/percepção de negócios;<br>
+                - Agilidade;<br>
+                - Ética.<br>
+            </article>
+        </div>
+    </div>
+</section>
+<div class="clear"></div>
+<footer>
+  <div class="container">
+    <article class="col-md-4 col-sm-4 col-xs-12 ">
+      <h5>Onde Estamos</h5>
+      <p>Rua Padre Cicero, 917<br/>Centro - Juazeiro do Norte - CE</p>
+    </article>
+    <article class="col-md-4 col-sm-4 col-xs-12 text-center">
+      <h5>Siga-nos nas Redes Sociais</h5>
+      <a href="https://www.instagram.com/mariahelida.novais/" target="_blank"><img src="images/icon-insta.png" /></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-face.png" /></a>
+    </article>
+    <article class="col-md-4 col-sm-4 col-xs-12 text-right">
+      <h5>Fale Conosco</h5>
+      <p><img src="images/icon-phone.png" />&nbsp; (88) 3512-6314</p>
+    </article>
+  </div>
+  <div class="clear"></div>
+</footer>
+<div class="clear"></div>
+<div class="footer-2">
+  <div class="container">
+    <p>IR Contabilidade &copy; 2019  | Todos os Direitos Reservados | Desenvolvido por <a href="https://www.instagram.com/emanuelfernandes915/" target="_blank">Emanuel Fernandes</a></p>
+  </div>
+</div>
+</body><!--fim do documento-->
+</html><!--Scripts e Css -->
