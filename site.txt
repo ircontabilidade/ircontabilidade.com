@@ -1,0 +1,7 @@
+git init
+git add .
+git commit -m "SITE"
+git remote add origin https://github.com/ircontabilidade/site.git
+git push -u origin master
+
+https://ircontabilidade.github.io/site/
