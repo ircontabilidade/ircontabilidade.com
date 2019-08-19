@@ -1,4 +1,4 @@
-if(isset($_POST['enviar'])){
+/*if(isset($_POST['enviar'])){
     $assunto = "Fale Conosco";
 
     $msg = "Nome: " . $_POST["Nome Completo"] . "<br>";
@@ -17,4 +17,5 @@ if(isset($_POST['enviar'])){
     mail($destinatario,$assunto,$msg,$headers);
 
     header("Location: contato.html");
-}
+}*/
+https://formspree.io/escritorioircontabilidade@gmail@email.com
