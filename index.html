@@ -15,44 +15,6 @@
 <script src="js/global.js"  type="text/javascript"></script>
 <script src="js/funcoes.js" type="text/javascript"></script>
 <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
-<script type="text/javascript">
- //CONTATO FORM
- function validateContato(){
-  var x=document.forms["contato"]["campos[Nome]"].value;
-  if (x==null || x==""){
-    alert("Por Favor, coloque seu nome.");
-    return false;
-  }
-
-  var x=document.forms["contato"]["campos[Email]"].value;
-  var atpos=x.indexOf("@");
-  var dotpos=x.lastIndexOf(".");
-
-  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
-    alert("Por Favor, insira um email válido.");
-    return false;
-  }
-
-  var x=document.forms["contato"]["campos[Cidade/Estado]"].value;
-  if (x==null || x==""){
-    alert("Por Favor, coloque sua Cidade e Estado.");
-    return false;
-  }
-
-  var x=document.forms["contato"]["campos[Telefone]"].value;
-  if (x==null || x==""){
-    alert("Por Favor, coloque seu telefone.");
-    return false;
-  }
-
-  else{return true;}
-}
-</script>
-<!--Inicio SCRIPT Chat-->
-<script type="text/javascript">
-window.$mysuite||function(t,e){var c=$mysuite=function(t){c._.push(t)},s=c.s=t.createElement(e),a=t.getElementsByTagName(e)[0];c.set=function(t){c.set._.push(t)},c._=[],c.set._=[],s.async=!0,s.setAttribute("charset","utf-8"),s.src="http://www.google.com.br",c.t=+new Date,s.type="text/javascript",a.parentNode.insertBefore(s,a)}(document,"script");
-</script>
-<!--Fim SCRIPT Chat-->
 
 </head>
 <body>
