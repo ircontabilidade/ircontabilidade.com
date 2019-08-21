@@ -3,5 +3,6 @@ git add .
 git commit -m "SITE"
 git remote add origin https://github.com/ircontabilidade/site.git
 git push -u origin master
+git clone https://github.com/ircontabilidade/site.git
 
 https://ircontabilidade.github.io/site/
