@@ -16,6 +16,22 @@
 <script src="js/funcoes.js" type="text/javascript"></script>
 <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
 
+<script>
+if ( ! Modernizr.adownload ) {
+  var $link = $('a');
+ 
+    $link.each(function() {
+        var $download = $(this).attr('download');
+     
+        if (typeof $download !== typeof undefined && $download !== false) {
+      var $el = $('<div>').addClass('download-instruction').text('Right-click and select "Download Linked File"');
+      $el.insertAfter($(this));
+        }
+ 
+    });
+}
+</script>
+
 </head>
 <body>
   <!-- POP UP IE-->
