@@ -60,64 +60,14 @@
 
 <body>
   <h1 type="text">LOGIN</h1>
-  <div class="global">
-  <form  name="" method="post" action="">
+  <div>
+  <form  name="form" method="post" action="login.php">
 	<p type="text">Usuario</p>
 	<input type="text" name="usuario" maxlength="14" style="width:150px"></input>
 	<p type="text">Senha</p>
 	<input type="password" name="senha" maxlength="14" style="width:150px"></input>
 	<input type="submit" name="submit" value="Entrar" style="width:100px"></input>
   </form>
-  <?php
-	/* Declaração de Variáveis */
-	$usuario = @$_REQUEST['usuario'];
-	$senha = @$_REQUEST['senha'];
-	$submit = @$_REQUEST['submit'];
-
-	/* Declaração das variáveis que possuem os usuarios e as senhas */
-	$usuario1 = '08886250000182';
-	$senha1 = '08886250000182';
-
-	$usuario2 = '12141590000151';
-	$senha2 = '12141590000151';
-
-	$usuario3 = '15265251000175';
-	$senha3 = '15265251000175';
-
-	/* Testa se o botão submit foi ativado */
-	if($submit){
-
-		/* Se o campo usuário ou senha estiverem vazios geramos um alerta */
-		if($usuario == "" || $senha == ""){
-			echo "<script:alert('Por favor, preencha todos os campos!');</script>";
-		}
-		/* Caso o campo usuario e senha não estejam vazios vamos testar se o usuário e a senha batem iniciamos uma sessão e redirecionamos o usuário para o painel */
-		else{
-			if(($usuario == $usuario1 && $senha == $senha1)){
-				session_start();
-				$_SESSION['usuario']=$usuario;
-				$_SESSION['senha']=$senha;
-				header("Location: empresa/08886250000182.html");
-			}
-			else if(($usuario == $usuario2 && $senha == $senha2)){
-				session_start();
-				$_SESSION['usuario']=$usuario;
-				$_SESSION['senha']=$senha;
-				header("Location: empresa/12141590000151/1/12141590000151.html");
-			}
-			else if(($usuario == $usuario3 && $senha == $senha3)){
-				session_start();
-				$_SESSION['usuario']=$usuario;
-				$_SESSION['senha']=$senha;
-				header("Location: empresa/15265251000175/1/15265251000175.html");
-			}
-			/* Se o usuario ou a senha não batem alertamos o usuario */
-			else{
-				echo "<script>alert('Usuario e/ou senha invalido(s), Tente novamente!');</script>";
-			}
-		}
-	}
-  ?>
   </div>
 </body>
 
