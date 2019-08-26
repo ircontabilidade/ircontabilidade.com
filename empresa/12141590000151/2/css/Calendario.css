@@ -1,0 +1,102 @@
+/**
+ * Properties do calendário imposto do dia
+ */
+.grid tr.headings th {
+    text-align:center;
+    font-family:'Open Sans', Arial, serif;
+    font-size: 1em;
+    font-weight:normal;
+    padding:5px;
+}
+/*Dias da Semana*/
+.grid tr.gradiente th {
+    border-color:#FFFFFF;
+    background:#202030;
+    font-weight:normal;
+    font-size:1.0em;
+}
+.grid tr.gradiente th a {
+    color:#000 !important;
+    font-weight:bold;
+    text-decoration:none;
+}
+.grid tr.headings th a span {
+    color:#fff!important;
+    font-weight:normal;
+    text-decoration:none;
+}
+.grid tr.headings th span a {
+    color:#fff!important;
+    font-weight:normal;
+    text-decoration:none;
+}
+/*Setinhas*/
+.grid tr.headings th a {
+    color:#000!important;
+    font-weight:normal;
+    text-decoration:none;
+}
+/*Cores das Fontes dos Dias do mês*/
+.grid tr.calendar td a {
+    color:#737373;
+    font-weight:normal;
+    text-decoration:none;
+}
+/*Dias Vagos*/
+.grid tr.calendar td {
+    text-align:right;
+    padding:6px;
+    border-width:1px 0px 0px 1px;
+    border-color:#f4f4f4;
+    border-style:solid;
+    background-color: #e7e7e7;
+    position: relative;
+}
+/*Dias Sem Imposto*/
+.grid tr.calendar td.calendarDay {
+    background-color: #e7e7e7;
+    vertical-align:top;
+}
+/*Hover dos dias sem imposto*/
+.grid tr.calendar td:hover, .grid tr.calendarth:hover {
+    background-color: #CCC;
+}
+/*Dias com Imposto*/
+.grid tr.calendar td.marked {
+    background-color: #d3d3d3 !important;
+}
+/* cor amarela atual */
+/*Domingo*/
+.grid tr.calendar td.domingo {
+    background-color:#e7e7e7;
+}
+.grid tr.calendar td.domingo .dayNumber a {
+    color:#000;
+}
+.grid th {
+    border:0 !important;
+}
+/** Tooltip */
+.tooltip {
+    position:absolute;
+    left:-2000px;
+    background-color:#202030;
+    padding:0px;
+    border:1px solid #202030;
+    max-width:400px;
+}
+.tooltip p {
+    margin:0;
+    padding:0;
+    color:#fff;
+    background-color:#202030;
+    padding:10px;
+    font:11px Verdana, Arial, Helvetica, sans-serif;
+}
+.calendario1 {
+    font-family:'Open Sans', Arial, serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    float:left;
+    color:#000;
+}
