@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+	function Login(){
+		var done=0;
+		var username=document.login.username.value;
+		username=username.toLowerCase();
+		var password=document.login.password.value;
+		password=password.toLowerCase();
+		if (username=="08886250000182" && password=="08886250000182") { window.location="empresa/08886250000182.html"; done==0; }
+		if (username=="12141590000151" && password=="12141590000151") { window.location="empresa/12141590000151/1/12141590000151.html"; done==0; }
+		if (username=="15265251000175" && password=="15265251000175") { window.location="empresa/15265251000175/1/15265251000175.html"; done==0; }
+	}
+</script>
+<body>
+	<center>
+		<form name=login>
+			<p><font face="Arial Black">LOGIN</font></p>
+			<p height="22" align="center">
+				Usuário: <input type=text name=username size="20" maxlength="14">
+			</p>
+			<p height="22">
+				Senha: <input type=password name=password size="20" maxlength="14">
+			</p>
+			<p colspan=2 align=center height="26">
+				<input type=button value="Entrar" onClick="Login()">
+			</p>
+		</form>
+	</center>
+</html>
